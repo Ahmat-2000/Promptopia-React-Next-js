@@ -72,3 +72,11 @@ Full-stack-App :
 
 SEO :
     pour amélioer le seo, il faut utiliser le metadata dynamiquement
+
+In NextJS : 
+    On a pas besoin de " import React from 'react' "
+
+
+Link :
+    https://console.cloud.google.com
+    https://www.mongodb.com/atlas
