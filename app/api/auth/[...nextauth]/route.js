@@ -23,6 +23,7 @@ const handler = NextAuth({
         },
     
         async signIn({profile}){
+            console.log(profile);
             try {
                 // serverLess -> lambda -> dynamodb
                 await connectToDB();
@@ -31,8 +32,7 @@ const handler = NextAuth({
                 const userExists = await User.findOne({
                     email: profile.email
                 });
-                console.log(profile.name + "\n")
-                console.log(profile.name.replace(" ","").toLowerCase())
+                
                 // if not, creat a new user
                 // username is the complet name without white space
                 if( !userExists){
